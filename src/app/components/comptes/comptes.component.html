@@ -1,0 +1,24 @@
+<div class="card mt-4">
+  <div class="card-header bg-info text-white">
+    Liste des Comptes
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Numero</th>
+          <th>Proprietaire</th>
+          <th>Solde</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data">
+          <td>{{item.numero}}</td>
+          <td>{{item.proprietaire}}</td>
+          <td>{{item.solde}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
